@@ -1,26 +1,13 @@
 # opener
 
-A framework based on Eggjs, open Eggjs
+基于[egg](https://github.com/eggjs/egg)重定义controller,router的加载规则。基于此框架可以加载多层controller与router。
 
-## QuickStart
+## 重定义项
 
-```bash
-$ npm install
-$ npm test
-```
+### controller
 
-publish your framework to npm, then change app's dependencies:
+支持加载framework层面的controller定义，不支持重写。主要为了让部分通用controller沉淀入框架层。
 
-```js
-// {app_root}/index.js
-require('opener').startCluster({
-  baseDir: __dirname,
-  // port: 7001, // default to 7001
-});
+### router
 
-```
-
-## Questions & Suggestions
-
-Please open an issue [here](https://github.com/eggjs/egg/issues).
-
+支持加载framework层面的router定义。主要为了让部分通用router沉淀入框架层，通过调整route顺序定义处理优先级。

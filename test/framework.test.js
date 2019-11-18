@@ -20,7 +20,7 @@ describe('test/framework.test.js', () => {
   it('should GET /_egg_routers', () => {
     return app.httpRequest()
       .get('/_egg_routers')
-      .expect('framework')
+      .expect('application')
       .expect(200);
   });
 
