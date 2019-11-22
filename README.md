@@ -2,6 +2,24 @@
 
 基于[egg](https://github.com/eggjs/egg)重定义controller,router的加载规则。基于此框架可以加载多层controller与router。
 
+## Usage
+
+```
+$ npm i egg-opener --save
+or
+$ yarm add egg-opener
+
+# ${baseDir}/index.js
+const startCluster = require('egg').startCluster;
+startCluster({
+  // 应用的代码目录
+  baseDir: '/path/to/app',
+  framework: 'egg-opener',
+}, () => {
+  console.log('app started');
+});
+```
+
 ## 重定义项
 
 ### controller

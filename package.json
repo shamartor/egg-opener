@@ -1,6 +1,6 @@
 {
-  "name": "opener",
-  "version": "1.0.0",
+  "name": "egg-opener",
+  "version": "1.0.1",
   "description": "A framework based on Eggjs, open Eggjs",
   "dependencies": {
     "egg": "^2.3.0"
